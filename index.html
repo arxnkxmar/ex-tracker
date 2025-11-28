@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <h1 class="title"> Student Dashboard</h1>
+
+    <div class="container">
+
+        <!-- EXPENSE TRACKER -->
+        <div class="card">
+            <h2>Expense Tracker</h2>
+            <input id="expName" type="text" placeholder="Expense name..." />
+            <input id="expAmount" type="number" placeholder="Amount..." />
+            <button onclick="addExpense()">Add Expense</button>
+
+            <ul id="expList"></ul>
+
+            <h3>Total: ₹<span id="totalAmount">0</span></h3>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
